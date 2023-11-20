@@ -7,9 +7,20 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	 <p id="status">Enter the Metaverse</p>
+    <button id="enterBtn">Enter</button>
+
+    <script>
+        // Get references to the elements
+        var statusParagraph = document.getElementById("status");
+        var enterButton = document.getElementById("enterBtn");
+
+        // Add a click event listener to the button
+        enterButton.addEventListener("click", function() {
+            // Update the text inside the p tag
+            statusParagraph.innerText = "Entered Metaverse";
+        });
+    </script>
 
 </body>
 
